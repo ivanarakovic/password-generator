@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset = "UTF-8" />
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0" />
+		<title>Password generator</title>
+		<link rel = "stylesheet" href = "style.css" />
+		<script src = "script.js" defer></script>
+	</head>
+	
+	<body>
+	    <div class = "main-box">
+		    <div class = "generated">
+			    <span id = "pass">123jkkkk9ik</span>
+				<button onclick = 'copyToClipboard()'>Copy</button>
+			</div>
+			<br><br><br>
+			<div class = "other">
+			    <label for="plength">Password Length:</label>
+                <input type="number" id="plength" class = "len" min="2" max="25"><br><br>
+                <label for="upper">Contain Uppercase Letters:</label>
+                <input type="checkbox" id="upper"><br><br>
+			    <label for = "lower">Contain Lower Case Letters:</label>
+			    <input type = "checkbox" id = "lower"><br><br>
+			    <label for = "num">Contain Numbers:</label>
+			    <input type = "checkbox" id = "num"><br><br>
+			    <label for = "symbol">Contain Symbols:</label>
+			    <input type = "checkbox" id = "symbol"><br><br><br>
+			    <button onclick = 'generate()'>Generate password</button>
+			</div>
+		</div>
+		
+	</body>
+</html>
